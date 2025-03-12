@@ -1,0 +1,9 @@
+{
+  "startG": 50000,
+  "endG": 100000,
+  "reverse": true,
+  "parallelSessions": 10,
+  "dateFilter": null,
+  "skipExisting": true,
+  "lastProcessedG": 99970
+}

@@ -1,0 +1,29 @@
+
+> vox-engine@0.1.0 import-votes
+> ts-node --project tsconfig.node.json src/scrape-vote.ts 85000 85001
+
+[34m[2025-03-12T15:14:56.593Z] [info] Starting vote scraping from command line with g=85000 to g=85001[0m
+[34m[2025-03-12T15:14:56.595Z] [info] Starting vote scraping from g=85000 to g=85001[0m
+[32m[2025-03-12T15:14:56.733Z] [success] Connected to database[0m
+[34m[2025-03-12T15:14:56.746Z] [info] Processing voting session with g=85000[0m
+[34m[2025-03-12T15:15:00.615Z] [info] Date: 2025-03-04[0m
+[34m[2025-03-12T15:15:00.615Z] [info] Time: 18:44:00[0m
+[34m[2025-03-12T15:15:00.615Z] [info] Title: Pořad schůze[0m
+[34m[2025-03-12T15:15:00.615Z] [info] Meeting Details: 131. schůze, 28. hlasování, 4. března 2025, 18:44:00[0m
+[34m[2025-03-12T15:15:00.645Z] [info] Adding new voting session g85000[0m
+[31m[2025-03-12T15:15:05.285Z] [error] Error processing session g=85000: error: duplicate key value violates unique constraint "voting_sessions_external_id_unique"[0m
+[34m[2025-03-12T15:15:05.285Z] [info] Processing voting session with g=85001[0m
+[31m[2025-03-12T15:15:35.427Z] [error] Error processing session g=85001: TimeoutError: Navigation timeout of 30000 ms exceeded[0m
+[32m[2025-03-12T15:15:35.451Z] [success] 
+╔═════════════════════════════════════════════════════════╗
+║                Vote Scraping Complete                   ║
+║                                                         ║
+║  Total sessions processed:   0                    ║
+║  New sessions added:   0                          ║
+║  Total votes added:    0                          ║
+║  Errors:   2                                      ║
+║  Skipped:   0                                    ║
+║                                                         ║
+╚═════════════════════════════════════════════════════════╝
+        [0m
+[32m[2025-03-12T15:15:35.451Z] [success] Vote scraping completed successfully[0m
